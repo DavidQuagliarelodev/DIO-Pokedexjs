@@ -1,0 +1,10 @@
+*{
+    font-family: "Roboto" sans-serif;
+    box-sizing: border-box;
+}
+.headerContainer{
+    padding: 1rem;
+}
+.headerContainer h1{
+    font-weight: 900;
+}
