@@ -1,9 +1,21 @@
 *{
-    font-family: "Roboto" sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #f6f8fc;
+    margin: auto;
+    max-width: 1000px;
 }
 
 main{
     padding: 1rem;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+h1{
+    font-weight: bolder;
 }
 
 .pokemons{
@@ -38,7 +50,7 @@ main{
 
 .pokemon .name{
     font-size: 1.5rem;
-    font-weight: 900;
+    font-weight: 500;
 }
 
 .pokemon .types{
@@ -61,5 +73,36 @@ main{
     margin :.25rem 0;
     border-radius: 1rem;
     font-size: 1rem;
+    font-weight: 200;
 
+}
+
+
+
+@media only screen and (max-width: 576px){
+    .pokemon{
+        max-width: 150px;
+        padding: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .pokemos{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+
+@media only screen and (max-width: 992px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}
+
+
+@media only screen and (min-width: 1000px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
