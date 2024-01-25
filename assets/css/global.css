@@ -80,6 +80,10 @@ h1{
 
 
 @media only screen and (max-width: 576px){
+    .pokemons{
+        grid-template-columns: 1fr 1fr;
+    }
+    
     .pokemon{
         max-width: 150px;
         padding: 25px;
@@ -88,7 +92,7 @@ h1{
 
 @media only screen and (max-width: 768px){
     .pokemos{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr ;
     }
 }
 
@@ -96,7 +100,7 @@ h1{
 
 @media only screen and (max-width: 992px){
     .pokemons{
-        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr  ;
     }
 }
 
