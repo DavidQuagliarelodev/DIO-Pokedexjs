@@ -19,8 +19,11 @@ function listarPokemonHtml(pokemon) {
 
 const pokemonsList = document.getElementById("pokemonslist");
 pokeapi.getpokemon().then((e) => {
+  const pokemons = [];
   for (let i = 0; i < e.length; i++) {
-    const pokemons = e[i];
-    pokemonsList.innerHTML += listarPokemonHtml(pokemons);
+    const listagem = e[i]
+    pokemons.push(listagem);
   }
+
+  pokemonsList.innerHTML += pokemons.map(listarPokemonHtml).join('')
 });
